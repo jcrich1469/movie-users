@@ -49,11 +49,6 @@ class MLPCollaborativeFiltering(nn.Module):
 
 
 
-
-
-
-
-
 #Only genres for now. deadline, 12th March
 #JC WEBTOKENS - rust backend, js
 
