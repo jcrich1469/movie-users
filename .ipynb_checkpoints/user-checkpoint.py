@@ -1,9 +1,10 @@
+import uuid
 class User:
 
     def __init__(self,name):
 
         self.name = name
-        self.user_id = id(self)
+        self.user_id = str(uuid.uuid4())
         self.reviews = []
 
     #assuming one review per movie.
