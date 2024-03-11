@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969/d9bc7a53d95f452ca0e7e54f599c0d69/artifacts
+end_time: 1710195267937
+entry_point_name: ''
+experiment_id: '827152334394031969'
+lifecycle_stage: active
+run_id: d9bc7a53d95f452ca0e7e54f599c0d69
+run_name: unleashed-ape-201
+run_uuid: d9bc7a53d95f452ca0e7e54f599c0d69
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710195095017
+status: 3
+tags: []
+user_id: james

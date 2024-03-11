@@ -1,0 +1,19 @@
+2024-03-02 21:02:11,261 INFO    StreamThr :82005 [internal.py:wandb_internal():86] W&B internal server running at pid: 82005, started at: 2024-03-02 21:02:11.260726
+2024-03-02 21:02:11,262 DEBUG   HandlerThread:82005 [handler.py:handle_request():146] handle_request: status
+2024-03-02 21:02:11,265 INFO    WriterThread:82005 [datastore.py:open_for_write():87] open: /home/james/Desktop/torchex/movie-users/wandb/run-20240302_210211-8hf8rini/run-8hf8rini.wandb
+2024-03-02 21:02:11,265 DEBUG   SenderThread:82005 [sender.py:send():382] send: header
+2024-03-02 21:02:11,310 DEBUG   SenderThread:82005 [sender.py:send():382] send: run
+2024-03-02 21:02:15,984 DEBUG   HandlerThread:82005 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-02 21:02:15,984 INFO    HandlerThread:82005 [handler.py:finish():869] shutting down handler
+2024-03-02 21:02:16,311 INFO    WriterThread:82005 [datastore.py:close():296] close: /home/james/Desktop/torchex/movie-users/wandb/run-20240302_210211-8hf8rini/run-8hf8rini.wandb
+2024-03-02 21:02:16,364 INFO    SenderThread:82005 [dir_watcher.py:__init__():211] watching files in: /home/james/Desktop/torchex/movie-users/wandb/run-20240302_210211-8hf8rini/files
+2024-03-02 21:02:16,365 INFO    SenderThread:82005 [sender.py:_start_run_threads():1136] run started: 8hf8rini with start time 1709413331.260592
+2024-03-02 21:02:16,365 INFO    SenderThread:82005 [sender.py:finish():1572] shutting down sender
+2024-03-02 21:02:16,365 INFO    SenderThread:82005 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-02 21:02:17,365 INFO    SenderThread:82005 [dir_watcher.py:finish():388] scan: /home/james/Desktop/torchex/movie-users/wandb/run-20240302_210211-8hf8rini/files
+2024-03-02 21:02:17,365 INFO    SenderThread:82005 [dir_watcher.py:finish():402] scan save: /home/james/Desktop/torchex/movie-users/wandb/run-20240302_210211-8hf8rini/files/config.yaml config.yaml
+2024-03-02 21:02:17,365 INFO    SenderThread:82005 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-02 21:02:17,365 INFO    SenderThread:82005 [file_pusher.py:join():178] waiting for file pusher
+2024-03-02 21:02:17,910 INFO    wandb-upload_0:82005 [upload_job.py:push():131] Uploaded file /home/james/Desktop/torchex/movie-users/wandb/run-20240302_210211-8hf8rini/files/config.yaml
+2024-03-02 21:02:18,367 INFO    SenderThread:82005 [file_stream.py:finish():595] file stream finish called
+2024-03-02 21:02:18,554 INFO    SenderThread:82005 [file_stream.py:finish():599] file stream finish is done

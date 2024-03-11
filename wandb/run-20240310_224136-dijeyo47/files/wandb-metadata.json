@@ -1,0 +1,113 @@
+{
+    "os": "Linux-6.5.0-21-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-03-10T22:41:36.929181",
+    "startedAt": "2024-03-10T22:41:36.204599",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/jcrich1469/movie-users",
+        "commit": "74d7fe8af575c32c792ff1eba37ce59b2716dbe2"
+    },
+    "email": "james@mailmash.net",
+    "root": "/home/james/Desktop/torchex/movie-users",
+    "host": "james-XiaoXin-14-ABR8",
+    "username": "james",
+    "executable": "/home/james/Desktop/torchex/movie-users/menv/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3558.19175,
+        "min": 400.0,
+        "max": 4546.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4460.655,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 4460.944,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 4335.951,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 3811.754,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 3605.146,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 4285.989,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 4467.241,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 3787.723,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 3583.313,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 3640.254,
+            "min": 400.0,
+            "max": 4546.0
+        },
+        {
+            "current": 4474.484,
+            "min": 400.0,
+            "max": 4546.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 468.3729476928711,
+            "used": 365.9396095275879
+        }
+    },
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "unique_id": "N/A",
+            "vbios_version": "113-BARCELO-004",
+            "performance_level": "auto",
+            "gpu_overdrive": "0",
+            "gpu_memory_overdrive": "0",
+            "series": "Barcelo",
+            "model": "0x3807",
+            "vendor": "Advanced Micro Devices, Inc. [AMD/ATI]",
+            "sku": "BARCELO"
+        }
+    ],
+    "memory": {
+        "total": 13.493183135986328
+    }
+}

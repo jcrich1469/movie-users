@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969/98f7c09e83ce45d584819bf1e9a6d45d/artifacts
+end_time: 1710193988415
+entry_point_name: ''
+experiment_id: '827152334394031969'
+lifecycle_stage: active
+run_id: 98f7c09e83ce45d584819bf1e9a6d45d
+run_name: stylish-asp-804
+run_uuid: 98f7c09e83ce45d584819bf1e9a6d45d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710193841498
+status: 3
+tags: []
+user_id: james

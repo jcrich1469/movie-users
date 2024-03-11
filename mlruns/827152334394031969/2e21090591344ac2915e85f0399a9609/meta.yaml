@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969/2e21090591344ac2915e85f0399a9609/artifacts
+end_time: 1710101846912
+entry_point_name: ''
+experiment_id: '827152334394031969'
+lifecycle_stage: active
+run_id: 2e21090591344ac2915e85f0399a9609
+run_name: adaptable-eel-830
+run_uuid: 2e21090591344ac2915e85f0399a9609
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710101748969
+status: 3
+tags: []
+user_id: james

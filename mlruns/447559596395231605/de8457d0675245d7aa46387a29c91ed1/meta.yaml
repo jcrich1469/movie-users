@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/447559596395231605/de8457d0675245d7aa46387a29c91ed1/artifacts
+end_time: 1710112410731
+entry_point_name: ''
+experiment_id: '447559596395231605'
+lifecycle_stage: active
+run_id: de8457d0675245d7aa46387a29c91ed1
+run_name: awesome-grouse-173
+run_uuid: de8457d0675245d7aa46387a29c91ed1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710110978178
+status: 3
+tags: []
+user_id: james

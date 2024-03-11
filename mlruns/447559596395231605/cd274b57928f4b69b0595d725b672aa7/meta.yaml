@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/447559596395231605/cd274b57928f4b69b0595d725b672aa7/artifacts
+end_time: 1710109906669
+entry_point_name: ''
+experiment_id: '447559596395231605'
+lifecycle_stage: active
+run_id: cd274b57928f4b69b0595d725b672aa7
+run_name: chill-mink-550
+run_uuid: cd274b57928f4b69b0595d725b672aa7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710109753397
+status: 3
+tags: []
+user_id: james

@@ -1,0 +1,6 @@
+artifact_location: file:///home/james/Desktop/torchex/movie-users/mlruns/447559596395231605
+creation_time: 1710109620296
+experiment_id: '447559596395231605'
+last_update_time: 1710109620296
+lifecycle_stage: active
+name: Finetuned Content Filter

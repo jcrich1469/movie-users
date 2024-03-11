@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969/8a157e54d1cf437a94c341d7bb1634f1/artifacts
+end_time: 1710195452361
+entry_point_name: ''
+experiment_id: '827152334394031969'
+lifecycle_stage: active
+run_id: 8a157e54d1cf437a94c341d7bb1634f1
+run_name: thoughtful-crow-999
+run_uuid: 8a157e54d1cf437a94c341d7bb1634f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710195268019
+status: 3
+tags: []
+user_id: james

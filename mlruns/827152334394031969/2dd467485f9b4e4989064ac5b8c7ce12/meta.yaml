@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969/2dd467485f9b4e4989064ac5b8c7ce12/artifacts
+end_time: 1710102150423
+entry_point_name: ''
+experiment_id: '827152334394031969'
+lifecycle_stage: active
+run_id: 2dd467485f9b4e4989064ac5b8c7ce12
+run_name: skillful-trout-103
+run_uuid: 2dd467485f9b4e4989064ac5b8c7ce12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710102148518
+status: 3
+tags: []
+user_id: james

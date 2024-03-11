@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969/69ffbb4d9bc047db955c37318b169ba9/artifacts
+end_time: 1710102814859
+entry_point_name: ''
+experiment_id: '827152334394031969'
+lifecycle_stage: active
+run_id: 69ffbb4d9bc047db955c37318b169ba9
+run_name: stately-deer-557
+run_uuid: 69ffbb4d9bc047db955c37318b169ba9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710102492887
+status: 3
+tags: []
+user_id: james

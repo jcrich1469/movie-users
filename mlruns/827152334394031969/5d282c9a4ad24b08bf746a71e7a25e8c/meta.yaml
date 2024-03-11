@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969/5d282c9a4ad24b08bf746a71e7a25e8c/artifacts
+end_time: 1710194259358
+entry_point_name: ''
+experiment_id: '827152334394031969'
+lifecycle_stage: active
+run_id: 5d282c9a4ad24b08bf746a71e7a25e8c
+run_name: marvelous-skunk-913
+run_uuid: 5d282c9a4ad24b08bf746a71e7a25e8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710194259350
+status: 3
+tags: []
+user_id: james

@@ -1,0 +1,287 @@
+2024-03-10 22:29:50,755 INFO    StreamThr :512040 [internal.py:wandb_internal():86] W&B internal server running at pid: 512040, started at: 2024-03-10 22:29:50.754590
+2024-03-10 22:29:50,756 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status
+2024-03-10 22:29:50,759 INFO    WriterThread:512040 [datastore.py:open_for_write():87] open: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/run-zyfmyu51.wandb
+2024-03-10 22:29:50,760 DEBUG   SenderThread:512040 [sender.py:send():382] send: header
+2024-03-10 22:29:50,763 DEBUG   SenderThread:512040 [sender.py:send():382] send: run
+2024-03-10 22:29:51,141 INFO    SenderThread:512040 [dir_watcher.py:__init__():211] watching files in: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files
+2024-03-10 22:29:51,141 INFO    SenderThread:512040 [sender.py:_start_run_threads():1136] run started: zyfmyu51 with start time 1710109790.754593
+2024-03-10 22:29:51,146 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: check_version
+2024-03-10 22:29:51,146 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: check_version
+2024-03-10 22:29:51,279 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: run_start
+2024-03-10 22:29:51,369 DEBUG   HandlerThread:512040 [system_info.py:__init__():27] System info init
+2024-03-10 22:29:51,369 DEBUG   HandlerThread:512040 [system_info.py:__init__():42] System info init done
+2024-03-10 22:29:51,369 INFO    HandlerThread:512040 [system_monitor.py:start():194] Starting system monitor
+2024-03-10 22:29:51,369 INFO    SystemMonitor:512040 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-10 22:29:51,370 INFO    HandlerThread:512040 [system_monitor.py:probe():214] Collecting system info
+2024-03-10 22:29:51,370 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started cpu monitoring
+2024-03-10 22:29:51,372 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started disk monitoring
+2024-03-10 22:29:51,373 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started gpuamd monitoring
+2024-03-10 22:29:51,373 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started memory monitoring
+2024-03-10 22:29:51,373 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started network monitoring
+2024-03-10 22:29:51,471 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-03-10 22:29:51,472 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-03-10 22:29:51,472 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():83] Could not parse GPU power as float
+2024-03-10 22:29:51,472 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-03-10 22:29:51,472 DEBUG   HandlerThread:512040 [system_info.py:probe():151] Probing system
+2024-03-10 22:29:51,474 DEBUG   HandlerThread:512040 [system_info.py:_probe_git():136] Probing git
+2024-03-10 22:29:51,479 DEBUG   HandlerThread:512040 [system_info.py:_probe_git():144] Probing git done
+2024-03-10 22:29:51,479 DEBUG   HandlerThread:512040 [system_info.py:probe():199] Probing system done
+2024-03-10 22:29:51,479 DEBUG   HandlerThread:512040 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-21-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-03-10T22:29:51.472285', 'startedAt': '2024-03-10T22:29:50.737688', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/jcrich1469/movie-users', 'commit': '74d7fe8af575c32c792ff1eba37ce59b2716dbe2'}, 'email': 'james@mailmash.net', 'root': '/home/james/Desktop/torchex/movie-users', 'host': 'james-XiaoXin-14-ABR8', 'username': 'james', 'executable': '/home/james/Desktop/torchex/movie-users/menv/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3762.68875, 'min': 400.0, 'max': 4546.0}, 'cpu_freq_per_core': [{'current': 4032.318, 'min': 400.0, 'max': 4546.0}, {'current': 4297.397, 'min': 400.0, 'max': 4546.0}, {'current': 4475.59, 'min': 400.0, 'max': 4546.0}, {'current': 4466.13, 'min': 400.0, 'max': 4546.0}, {'current': 4515.63, 'min': 400.0, 'max': 4546.0}, {'current': 4498.83, 'min': 400.0, 'max': 4546.0}, {'current': 4500.218, 'min': 400.0, 'max': 4546.0}, {'current': 3601.354, 'min': 400.0, 'max': 4546.0}, {'current': 4038.043, 'min': 400.0, 'max': 4546.0}, {'current': 4489.429, 'min': 400.0, 'max': 4546.0}, {'current': 4415.845, 'min': 400.0, 'max': 4546.0}, {'current': 400.0, 'min': 400.0, 'max': 4546.0}], 'disk': {'/': {'total': 468.3729476928711, 'used': 365.8727111816406}}, 'gpu_count': 1, 'gpu_devices': [{'unique_id': 'N/A', 'vbios_version': '113-BARCELO-004', 'performance_level': 'auto', 'gpu_overdrive': '0', 'gpu_memory_overdrive': '0', 'series': 'Barcelo', 'model': '0x3807', 'vendor': 'Advanced Micro Devices, Inc. [AMD/ATI]', 'sku': 'BARCELO'}], 'memory': {'total': 13.493183135986328}}
+2024-03-10 22:29:51,479 INFO    HandlerThread:512040 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-10 22:29:51,479 INFO    HandlerThread:512040 [system_monitor.py:probe():227] Publishing system info
+2024-03-10 22:29:51,480 INFO    HandlerThread:512040 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-10 22:29:51,481 DEBUG   SenderThread:512040 [sender.py:send():382] send: files
+2024-03-10 22:29:51,481 INFO    SenderThread:512040 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-10 22:29:51,490 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-10 22:29:51,490 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: python_packages
+2024-03-10 22:29:51,491 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:29:51,491 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:29:51,492 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:29:51,494 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: pause
+2024-03-10 22:29:51,494 INFO    HandlerThread:512040 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-03-10 22:29:51,494 INFO    HandlerThread:512040 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-10 22:29:51,494 DEBUG   SystemMonitor:512040 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-10 22:29:51,494 DEBUG   SystemMonitor:512040 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-10 22:29:51,494 DEBUG   SystemMonitor:512040 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-10 22:29:51,495 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-10 22:29:51,495 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined disk monitor
+2024-03-10 22:29:51,495 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined gpuamd monitor
+2024-03-10 22:29:51,495 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined memory monitor
+2024-03-10 22:29:51,495 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined network monitor
+2024-03-10 22:29:51,815 DEBUG   SenderThread:512040 [sender.py:send():382] send: telemetry
+2024-03-10 22:29:51,815 DEBUG   SenderThread:512040 [sender.py:send():382] send: telemetry
+2024-03-10 22:29:52,055 INFO    wandb-upload_0:512040 [upload_job.py:push():131] Uploaded file /tmp/tmpoo996w4nwandb/4wwjy1sr-wandb-metadata.json
+2024-03-10 22:29:52,142 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_created():271] file/dir created: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/wandb-metadata.json
+2024-03-10 22:29:52,142 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_created():271] file/dir created: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/requirements.txt
+2024-03-10 22:29:55,816 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:00,818 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:05,819 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:06,491 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:30:06,492 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:30:06,492 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:30:11,652 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:16,653 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:21,491 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:30:21,492 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:30:21,539 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:30:21,726 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:22,155 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/config.yaml
+2024-03-10 22:30:26,903 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:31,904 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:36,492 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:30:36,492 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:30:36,538 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:30:37,688 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:42,689 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:47,691 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:51,491 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:30:51,492 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:30:51,534 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:30:51,863 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: resume
+2024-03-10 22:30:51,863 INFO    HandlerThread:512040 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-03-10 22:30:51,863 INFO    HandlerThread:512040 [system_monitor.py:start():194] Starting system monitor
+2024-03-10 22:30:51,864 INFO    SystemMonitor:512040 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-10 22:30:51,864 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started cpu monitoring
+2024-03-10 22:30:51,864 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started disk monitoring
+2024-03-10 22:30:51,864 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started gpuamd monitoring
+2024-03-10 22:30:51,865 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started memory monitoring
+2024-03-10 22:30:51,866 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started network monitoring
+2024-03-10 22:30:52,078 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-03-10 22:30:52,079 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-03-10 22:30:52,079 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():83] Could not parse GPU power as float
+2024-03-10 22:30:52,079 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-03-10 22:30:52,168 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_created():271] file/dir created: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/output.log
+2024-03-10 22:30:52,696 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:30:53,568 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-10 22:30:53,569 DEBUG   SenderThread:512040 [sender.py:send():382] send: history
+2024-03-10 22:30:53,569 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: summary_record
+2024-03-10 22:30:53,570 INFO    SenderThread:512040 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 22:30:54,153 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-03-10 22:30:54,153 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-03-10 22:30:54,153 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():83] Could not parse GPU power as float
+2024-03-10 22:30:54,153 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-03-10 22:30:54,169 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/output.log
+2024-03-10 22:30:54,169 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_created():271] file/dir created: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/wandb-summary.json
+2024-03-10 22:30:56,169 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/output.log
+2024-03-10 22:30:56,232 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-03-10 22:30:56,232 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-03-10 22:30:56,232 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():83] Could not parse GPU power as float
+2024-03-10 22:30:56,233 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-03-10 22:30:56,587 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: pause
+2024-03-10 22:30:56,587 INFO    HandlerThread:512040 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-03-10 22:30:56,587 INFO    HandlerThread:512040 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-10 22:30:56,587 DEBUG   SystemMonitor:512040 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-10 22:30:56,587 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-10 22:30:56,587 DEBUG   SystemMonitor:512040 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-10 22:30:56,588 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined disk monitor
+2024-03-10 22:30:56,588 DEBUG   SystemMonitor:512040 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-10 22:30:56,588 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined gpuamd monitor
+2024-03-10 22:30:56,589 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined memory monitor
+2024-03-10 22:30:56,589 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined network monitor
+2024-03-10 22:30:56,589 DEBUG   SenderThread:512040 [sender.py:send():382] send: stats
+2024-03-10 22:30:58,590 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:03,591 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:06,492 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:31:06,493 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:31:06,493 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:31:08,739 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:13,740 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:18,741 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:21,492 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:31:21,493 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:31:21,535 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:31:24,694 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:29,695 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:34,697 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:36,492 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-10 22:31:36,493 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: stop_status
+2024-03-10 22:31:36,538 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:31:40,003 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:42,872 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: resume
+2024-03-10 22:31:42,873 INFO    HandlerThread:512040 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-03-10 22:31:42,873 INFO    HandlerThread:512040 [system_monitor.py:start():194] Starting system monitor
+2024-03-10 22:31:42,873 INFO    SystemMonitor:512040 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-10 22:31:42,873 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started cpu monitoring
+2024-03-10 22:31:42,873 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started disk monitoring
+2024-03-10 22:31:42,874 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started gpuamd monitoring
+2024-03-10 22:31:42,875 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started memory monitoring
+2024-03-10 22:31:42,875 INFO    SystemMonitor:512040 [interfaces.py:start():190] Started network monitoring
+2024-03-10 22:31:42,914 DEBUG   SenderThread:512040 [sender.py:send():382] send: telemetry
+2024-03-10 22:31:42,915 DEBUG   SenderThread:512040 [sender.py:send():382] send: exit
+2024-03-10 22:31:42,915 INFO    SenderThread:512040 [sender.py:send_exit():589] handling exit code: 0
+2024-03-10 22:31:42,915 INFO    SenderThread:512040 [sender.py:send_exit():591] handling runtime: 4
+2024-03-10 22:31:42,916 INFO    SenderThread:512040 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 22:31:42,917 INFO    SenderThread:512040 [sender.py:send_exit():597] send defer
+2024-03-10 22:31:42,917 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:42,917 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-10 22:31:42,917 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:42,917 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-10 22:31:42,918 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 1
+2024-03-10 22:31:42,918 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:42,918 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-10 22:31:42,918 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:42,918 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-10 22:31:42,918 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 2
+2024-03-10 22:31:42,918 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:42,918 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-10 22:31:42,918 INFO    HandlerThread:512040 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-10 22:31:42,918 DEBUG   SystemMonitor:512040 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-10 22:31:42,918 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-10 22:31:42,918 DEBUG   SystemMonitor:512040 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-10 22:31:42,918 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined disk monitor
+2024-03-10 22:31:42,919 DEBUG   SystemMonitor:512040 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-10 22:31:42,969 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-03-10 22:31:42,969 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-03-10 22:31:42,970 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():83] Could not parse GPU power as float
+2024-03-10 22:31:42,970 WARNING gpuamd    :512040 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-03-10 22:31:42,970 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined gpuamd monitor
+2024-03-10 22:31:42,970 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined memory monitor
+2024-03-10 22:31:42,970 INFO    HandlerThread:512040 [interfaces.py:finish():202] Joined network monitor
+2024-03-10 22:31:42,970 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:42,971 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-10 22:31:42,971 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 3
+2024-03-10 22:31:42,971 DEBUG   SenderThread:512040 [sender.py:send():382] send: stats
+2024-03-10 22:31:42,971 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:42,971 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-10 22:31:42,971 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:42,971 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-10 22:31:42,971 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 4
+2024-03-10 22:31:42,971 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:42,971 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-10 22:31:42,971 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:42,971 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-10 22:31:42,971 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 5
+2024-03-10 22:31:42,972 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:42,972 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-10 22:31:42,972 DEBUG   SenderThread:512040 [sender.py:send():382] send: summary
+2024-03-10 22:31:42,972 INFO    SenderThread:512040 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-10 22:31:42,972 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:42,972 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-10 22:31:42,972 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 6
+2024-03-10 22:31:42,972 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:42,973 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-10 22:31:42,973 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:42,973 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-10 22:31:42,975 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: status_report
+2024-03-10 22:31:43,123 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 7
+2024-03-10 22:31:43,123 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:43,123 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-10 22:31:43,124 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:43,124 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-10 22:31:43,194 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/wandb-summary.json
+2024-03-10 22:31:43,194 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/config.yaml
+2024-03-10 22:31:43,874 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 22:31:43,966 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 8
+2024-03-10 22:31:43,967 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 22:31:43,967 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:43,967 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-10 22:31:43,967 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:43,967 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-10 22:31:43,968 INFO    SenderThread:512040 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-10 22:31:43,968 INFO    SenderThread:512040 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-10 22:31:43,968 INFO    SenderThread:512040 [job_builder.py:_get_program_relpath():444] run is notebook based run
+2024-03-10 22:31:43,968 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 9
+2024-03-10 22:31:43,968 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:43,968 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-10 22:31:43,968 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:43,968 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-10 22:31:43,968 INFO    SenderThread:512040 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-10 22:31:44,194 INFO    Thread-12 :512040 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/output.log
+2024-03-10 22:31:44,195 INFO    SenderThread:512040 [dir_watcher.py:finish():388] scan: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files
+2024-03-10 22:31:44,195 INFO    SenderThread:512040 [dir_watcher.py:finish():402] scan save: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/output.log output.log
+2024-03-10 22:31:44,195 INFO    SenderThread:512040 [dir_watcher.py:finish():402] scan save: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/wandb-summary.json wandb-summary.json
+2024-03-10 22:31:44,195 INFO    SenderThread:512040 [dir_watcher.py:finish():402] scan save: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/config.yaml config.yaml
+2024-03-10 22:31:44,198 INFO    SenderThread:512040 [dir_watcher.py:finish():402] scan save: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/wandb-metadata.json wandb-metadata.json
+2024-03-10 22:31:44,199 INFO    SenderThread:512040 [dir_watcher.py:finish():402] scan save: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/requirements.txt requirements.txt
+2024-03-10 22:31:44,199 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 10
+2024-03-10 22:31:44,199 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:44,199 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-10 22:31:44,201 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:44,202 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-10 22:31:44,203 INFO    SenderThread:512040 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-10 22:31:44,527 INFO    wandb-upload_0:512040 [upload_job.py:push():131] Uploaded file /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/wandb-summary.json
+2024-03-10 22:31:44,629 INFO    wandb-upload_1:512040 [upload_job.py:push():131] Uploaded file /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/output.log
+2024-03-10 22:31:44,717 INFO    wandb-upload_2:512040 [upload_job.py:push():131] Uploaded file /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/config.yaml
+2024-03-10 22:31:44,740 INFO    wandb-upload_3:512040 [upload_job.py:push():131] Uploaded file /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/files/requirements.txt
+2024-03-10 22:31:44,875 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 22:31:44,875 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 22:31:44,941 INFO    Thread-11 (_thread_body):512040 [sender.py:transition_state():617] send defer: 11
+2024-03-10 22:31:44,942 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:44,942 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-10 22:31:44,942 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:44,943 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-10 22:31:44,943 INFO    SenderThread:512040 [file_pusher.py:join():178] waiting for file pusher
+2024-03-10 22:31:44,944 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 12
+2024-03-10 22:31:44,944 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:44,944 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-10 22:31:44,944 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:44,944 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-10 22:31:44,944 INFO    SenderThread:512040 [file_stream.py:finish():595] file stream finish called
+2024-03-10 22:31:45,429 INFO    SenderThread:512040 [file_stream.py:finish():599] file stream finish is done
+2024-03-10 22:31:45,429 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 13
+2024-03-10 22:31:45,429 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:45,430 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-10 22:31:45,430 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:45,430 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-10 22:31:45,430 INFO    SenderThread:512040 [sender.py:transition_state():617] send defer: 14
+2024-03-10 22:31:45,430 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: defer
+2024-03-10 22:31:45,430 INFO    HandlerThread:512040 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-10 22:31:45,430 DEBUG   SenderThread:512040 [sender.py:send():382] send: final
+2024-03-10 22:31:45,430 DEBUG   SenderThread:512040 [sender.py:send():382] send: footer
+2024-03-10 22:31:45,430 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: defer
+2024-03-10 22:31:45,430 INFO    SenderThread:512040 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-10 22:31:45,431 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-10 22:31:45,431 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: poll_exit
+2024-03-10 22:31:45,432 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-10 22:31:45,432 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: server_info
+2024-03-10 22:31:45,432 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: server_info
+2024-03-10 22:31:45,475 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-10 22:31:45,475 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-10 22:31:45,475 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: job_info
+2024-03-10 22:31:45,559 DEBUG   SenderThread:512040 [sender.py:send_request():409] send_request: job_info
+2024-03-10 22:31:45,560 DEBUG   HandlerThread:512040 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-10 22:31:45,560 INFO    HandlerThread:512040 [handler.py:finish():869] shutting down handler
+2024-03-10 22:31:46,475 INFO    WriterThread:512040 [datastore.py:close():296] close: /home/james/Desktop/torchex/movie-users/wandb/run-20240310_222950-zyfmyu51/run-zyfmyu51.wandb
+2024-03-10 22:31:46,560 INFO    SenderThread:512040 [sender.py:finish():1572] shutting down sender
+2024-03-10 22:31:46,560 INFO    SenderThread:512040 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-10 22:31:46,560 INFO    SenderThread:512040 [file_pusher.py:join():178] waiting for file pusher

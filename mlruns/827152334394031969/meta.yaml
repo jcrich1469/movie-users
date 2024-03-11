@@ -1,0 +1,6 @@
+artifact_location: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969
+creation_time: 1710099404696
+experiment_id: '827152334394031969'
+last_update_time: 1710099404696
+lifecycle_stage: active
+name: Finetuned Collaborative Filter

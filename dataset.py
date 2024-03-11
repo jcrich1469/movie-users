@@ -4,23 +4,18 @@ from torch.utils.data import Dataset
 class ColFDataset(Dataset):
     
     def __init__(self,data,encoder):
-
-        user_ids = [did[2] for did in data]
-        movie_ids = [did[1] for did in data]
-        #may differ depending..... for 
-        # ratings = [int(did[4].split('/')[0]) for did in data]
-        ratings = [did[4] for did in data]
-
-
-        self.dataset = [[torch.tensor(encoder.encode(user_ids[i],encoder.user_to_idx),dtype=torch.int64),torch.tensor(encoder.encode(movie_ids[i],encoder.movie_to_idx),dtype=torch.int64),torch.tensor(ratings[i],dtype=torch.float)] for i in range(len(data))]
+ 
+        self.user_ids = [torch.tensor(encoder.encode(did[0],'users'),dtype=torch.int64) for did in data]
+        self.movie_ids = [torch.tensor(encoder.encode(did[1],'movies'),dtype=torch.int64) for did in data]
+        self.ratings = [torch.tensor(did[-1],dtype=torch.float) for did in data]
+        self.length = len(self.ratings)
     
-        
     def __len__(self):
-        return len(self.dataset)
+        return self.length
 
     def __getitem__(self, idx):
-        user_id, movie_id, rating = self.dataset[idx]
-        return user_id, movie_id, rating
+
+        return self.user_ids[idx], self.movie_ids[idx], self.ratings[idx]
 
 
 # compound data
@@ -28,8 +23,7 @@ class ConFDataset(Dataset):
     
     def __init__(self, data, encoder):
         self.user_data = [torch.tensor(encoder.encode(did[0], 'users'), dtype=torch.int64) for did in data]
-        # Assuming did[1] contains the genre information as a comma-separated string
-        #encoder.one_hot_encode(genre_data, 'genres')
+
         self.genre_data = [encoder.one_hot_encode(did[1],'genres') for did in data]  # No need for torch.tensor if encoder.one_hot_encode returns a tensor
         self.country_data = [encoder.one_hot_encode(did[2], 'countries') for did in data]
         self.ratings_data = [torch.tensor(did[3], dtype=torch.float) for did in data]
@@ -44,15 +38,14 @@ class ConFDataset(Dataset):
         movie_features = torch.cat((self.genre_data[idx], self.country_data[idx]), dim=0)
 
         return self.user_data[idx],movie_features,self.ratings_data[idx]
-
-
-
-
+        
 class Encoder:
+    
     def __init__(self, **kwargs):
+        
         self.vocab_to_idx = {}
         self.idx_to_vocab = {}
-
+        
         for category_name, items in kwargs.items():
             # Flatten the items if they are lists (for genres, for example)
             # Otherwise, use the items as they are (for user names and other categories)
@@ -65,13 +58,41 @@ class Encoder:
             self.vocab_to_idx[category_name] = self.build_vocab(flattened_items)
             self.idx_to_vocab[category_name] = {v: k for k, v in self.vocab_to_idx[category_name].items()}
     
-    
     def build_vocab(self, items):
-        vocab = {}
+        # Start indexing from 1, reserving 0 for "unknown"
+        vocab = {"<UNKNOWN>": 0}
         for item in items:
             if item not in vocab:
                 vocab[item] = len(vocab)
         return vocab
+
+    def update_vocab(self,new_items,category_name):
+        """
+        Update the vocabulary for a specific category with new items.
+        This method adds any new items not already present in the vocabulary.
+        
+        :param category_name: The category for which to update the vocabulary.
+        :param new_items: A list of new items to be added to the vocabulary.
+        """
+        # Flatten the items if they are lists
+        flattened_items = []
+        for item in new_items:
+            if isinstance(item, list):
+                flattened_items.extend(item)
+            else:
+                flattened_items.append(item)
+    
+        # Check if the category exists, create if not
+        if category_name not in self.vocab_to_idx:
+            self.vocab_to_idx[category_name] = {}
+            self.idx_to_vocab[category_name] = {}
+    
+        current_vocab_size = len(self.vocab_to_idx[category_name])
+        for item in flattened_items:
+            if item not in self.vocab_to_idx[category_name]:
+                self.vocab_to_idx[category_name][item] = current_vocab_size
+                self.idx_to_vocab[category_name][current_vocab_size] = item
+                current_vocab_size += 1
 
     def flatten_lists(self, items):
         # Split items by comma and return unique items
@@ -83,12 +104,19 @@ class Encoder:
 
     def encode(self, item, category):
         # Handle both single items and lists for encoding
+        # if isinstance(item, list):
+        #     # Return a list of indices for list items
+        #     return [self.vocab_to_idx[category].get(i, None) for i in item]
+        # else:
+        #     # Return a single index for a single item
+        #     return self.vocab_to_idx[category].get(item, None)
+        # Handle both single items and lists for encoding
         if isinstance(item, list):
-            # Return a list of indices for list items
-            return [self.vocab_to_idx[category].get(i, None) for i in item]
+            # Return a list of indices for list items, defaulting to 0 for unknown items
+            return [self.vocab_to_idx[category].get(i, self.vocab_to_idx[category].get("<UNKNOWN>")) for i in item]
         else:
-            # Return a single index for a single item
-            return self.vocab_to_idx[category].get(item, None)
+            # Return a single index for a single item, defaulting to 0 for unknown
+            return self.vocab_to_idx[category].get(item, self.vocab_to_idx[category].get("<UNKNOWN>"))
 
     def one_hot_encode(self, items, category):
         # Ensure 'items' is a list even if a single string is passed
@@ -112,16 +140,11 @@ class Encoder:
 
     def decode(self, idx, category):
         return self.idx_to_vocab[category].get(idx, None)
-
-
-
-
+        
 #split according to tokens.......????
 def split_data(data, split = 0.8):
-    
-    
+     
     split_idx = int(split * len(data))  # 80% for training, 20% for testing
     
     # Split the data, train and test
     return data[:split_idx], data[split_idx:]
-

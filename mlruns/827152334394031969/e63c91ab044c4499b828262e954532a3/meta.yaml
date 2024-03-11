@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969/e63c91ab044c4499b828262e954532a3/artifacts
+end_time: 1710194092555
+entry_point_name: ''
+experiment_id: '827152334394031969'
+lifecycle_stage: active
+run_id: e63c91ab044c4499b828262e954532a3
+run_name: merciful-grub-154
+run_uuid: e63c91ab044c4499b828262e954532a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710193988471
+status: 3
+tags: []
+user_id: james

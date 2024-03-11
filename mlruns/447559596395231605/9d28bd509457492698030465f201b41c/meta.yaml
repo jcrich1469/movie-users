@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/447559596395231605/9d28bd509457492698030465f201b41c/artifacts
+end_time: 1710109747897
+entry_point_name: ''
+experiment_id: '447559596395231605'
+lifecycle_stage: active
+run_id: 9d28bd509457492698030465f201b41c
+run_name: rogue-worm-103
+run_uuid: 9d28bd509457492698030465f201b41c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710109620336
+status: 3
+tags: []
+user_id: james

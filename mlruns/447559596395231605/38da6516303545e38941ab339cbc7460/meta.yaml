@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/447559596395231605/38da6516303545e38941ab339cbc7460/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '447559596395231605'
+lifecycle_stage: active
+run_id: 38da6516303545e38941ab339cbc7460
+run_name: likeable-hawk-256
+run_uuid: 38da6516303545e38941ab339cbc7460
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710110495239
+status: 1
+tags: []
+user_id: james

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/james/Desktop/torchex/movie-users/mlruns/827152334394031969/a735d101faf04f758d294e4ed0899e51/artifacts
+end_time: 1710101893876
+entry_point_name: ''
+experiment_id: '827152334394031969'
+lifecycle_stage: active
+run_id: a735d101faf04f758d294e4ed0899e51
+run_name: debonair-moose-476
+run_uuid: a735d101faf04f758d294e4ed0899e51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710101870291
+status: 3
+tags: []
+user_id: james

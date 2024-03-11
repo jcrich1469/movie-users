@@ -1,0 +1,4 @@
+
+2024/03/10 19:36:44 INFO mlflow.tracking.fluent: Experiment with name 'Finetuned Collaborative Filter' does not exist. Creating a new experiment.
+SELECT * FROM Users
+SELECT * FROM Movies
