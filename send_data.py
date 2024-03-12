@@ -20,7 +20,7 @@ json_data = json.dumps(data)
 
 
 # The URL to send the data to
-url = 'http://127.0.0.1:8000/matchuser'
+url = 'http://178.62.2.75:80/matchuser'
 
 # Send the data as a POST request
 response = requests.post(url, data=json_data, headers={'Content-Type': 'application/json'})
