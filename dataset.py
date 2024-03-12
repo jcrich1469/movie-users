@@ -26,7 +26,7 @@ class ConFDataset(Dataset):
 
         self.genre_data = [encoder.one_hot_encode(did[1],'genres') for did in data]  # No need for torch.tensor if encoder.one_hot_encode returns a tensor
         self.country_data = [encoder.one_hot_encode(did[2], 'countries') for did in data]
-        self.ratings_data = [torch.tensor(did[3], dtype=torch.float) for did in data]
+        self.ratings_data = [torch.tensor(did[-1],dtype=torch.float) for did in data]
         self.length = len(data)
     
     
