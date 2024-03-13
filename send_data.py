@@ -9,14 +9,23 @@ genre = 'Drama,Romance'
 country = 'South Korea'
 
 
-data = {
+dbuser = {
         'name':target_user_name,
         'genre':genre,
         'country':country
         }
 
+non_dbuser = {
 
-json_data = json.dumps(data)
+    'name':'Faith SELBEH',
+    'genre':'Adult',
+    'country':'Chad'
+
+}
+
+
+
+json_data = json.dumps(non_dbuser)
 
 
 # The URL to send the data to

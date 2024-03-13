@@ -80,7 +80,6 @@ def find_similar_users_avghybrid(target_user, genre, country, top_n=10):
 
     # Ensure target_user_id is valid
     target_user_enc = col_encoder.encode(target_user,'users')
-    print(target_user_enc)
     if target_user_enc >= len(user_embeddings):
         raise ValueError("Target user ID is out of range.")
 
@@ -115,14 +114,19 @@ def find_similar_users_avghybrid(target_user, genre, country, top_n=10):
 
 
 
+from pydantic import BaseModel
 
+class Item(BaseUser):
+    name: str
+    genre: str
+    country: str
 
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
 
 @app.post("/matchuser")
-async def make_matches(data: dict):
+async def make_matches(BaseUser: Item):
     # Process your input data and make a prediction with your model
     n,g,c = preprocess_data(data)
     
@@ -136,7 +140,5 @@ def preprocess_data(ddict):
     genre = ddict['genre']
     country = ddict['country']
     return name,genre,country
-    
-    
 
 
