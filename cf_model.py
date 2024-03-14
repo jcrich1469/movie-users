@@ -112,3 +112,50 @@ class MLPContentFilter(nn.Module):
         # Pass through the model
         output = self.layers(concat_embeds)
         return output.squeeze()
+
+
+
+
+class FusedFilter(nn.module):
+
+    def __init__(self,user_size,movie_size, movie_features_size, embedding_dim, hidden_dims=[100,50,25], dropout_rate = 0.5):
+
+        super(FusedFilter, self).__init__()
+        self.user_embeddings = nn.Embedding(user_size,embedding_dim)
+        self.movie_embeddings = nn.Embedding(movie_size,embedding_dim)
+        self.movie_features_transform = nn.LinearLayer(movie_features_size,embedding_dim)
+        self.layers = []
+        self.input = embedding_dim * 3
+
+        for hidden_dim in hidden_dims:
+            layers.append(nn.Linear(input_dim,hidden_dim))
+            layers.append(nn.BatchNorm1d(hidden_dim))
+            layers.append(nn.Dropout(p=dropout_rate))
+            layers.append(nn.ReLu())
+            input_dim = hidden_dim
+
+        self.output = nn.Layers(hidden_dim[-1],1)
+        self.combined_layers = nn.Sequential(*layers)
+
+    def forward(self, *inputs):
+
+        user_embeds = self.user_embeddings(inputs[0])
+
+        movie_embeds = self.embeddings(inputs[1])
+
+        movie_feat_embeds = self.feature_transform(inputs[2])
+        
+        um_embeds = torch.cat([user_embeds,movie_embeds])
+        umf_embeds = torch.cat([um_embeds,movie_feat_embeds])
+
+        output = self.layers(umf_embeds)
+        return output
+
+        
+        
+            
+    
+
+        
+
+    
