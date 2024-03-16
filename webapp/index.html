@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Application</title>
+    <style>
+        /* Simple CSS for layout */
+        div {
+            margin-bottom: 20px;
+        }
+        input, button {
+            margin: 5px 0; /* Add a little space between elements */
+        }
+    </style>
+</head>
+<body>
+    <div id="signup-form">
+        <input type="username" id="username" placeholder="Enter your username">
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" name="password">
+        <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <!-- Login form -->
+    <div id="login-form">
+        <input type="email" id="login-email" placeholder="Enter your email">
+        <input type="password" id="login-password" placeholder="Enter your password">
+        <button id="login-btn">Log In</button>
+    </div>
+
+    <!-- Sign out button -->
+    <div id="signout">
+        <button id="signout-btn">Sign Out</button>
+    </div>
+
+    <script type="module" src="src/index.js"></script>
+    <script src="dist/bundle.js"></script>
+<!-- TODO finish these... login done -->
+    <!-- Recommend Users form -->
+    <div id="-form">
+        <input type="name" id="user_r" placeholder="Enter name">
+        <input type="genre" id="genre_r" placeholder="Enter Genre">
+        <input type="country" id="country" placeholder="Enter Country">
+        <button id="recommend-btn">Recommend</button>
+    </div>
+
+    <!-- Add Movie Review -->
+    <div id="-form">
+        <input type="text" id="user_m" placeholder="Enter name">
+        <input type="text" id="genre_r" placeholder="Enter Genre">
+
+        <input type="text" id="country_r" placeholder="What do you think?">
+        <input type="text" id="review" placeholder="What do you think?">
+ 
+	<button id="login-btn">Post rating</button>
+    </div>
+
+</body>
+</html>
+
